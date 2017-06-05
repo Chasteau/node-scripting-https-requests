@@ -12,7 +12,7 @@ function getHTML (options, callback) {
 		});
 	
 	response.on('end', function(str) {
-		console.log(printHTML(bufferedData));
+		callback(bufferedData);
 	});
 });
 
